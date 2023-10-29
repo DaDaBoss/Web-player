@@ -1,0 +1,90 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Player</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+
+    <audio id="player_of_music" onended="onNextAuto()"></audio>
+
+    <div class="player">
+
+        <div class="current_music_and_tools">
+            <div class="photo_and_tools">
+                <img id="photo" class="photo" src="images/Michael Jackson - Bilie Jean.jpg">
+
+                <div class="">
+                    <div id="music_title" class="music_title">
+                        Michael Jackson - Bilie Jean
+                    </div>
+                    <div class="tools">
+                        <img class="tool" src="svg/prev.svg" id="prev">
+                        <img class="tool" src="svg/play.svg" id="play_or_pause">
+                        <img class="tool" src="svg/next.svg" id="next">
+                    </div>
+                </div>
+
+            </div>
+            <input id="time_line" value="0" class="time_line" type="range" onchange="change_time(value)">
+
+        </div>
+
+        <div class="visual_music">
+            <canvas id="auido_visual" class="auido_visual">
+            </canvas>
+        </div>
+        
+        <div class="list_of_musics">
+            <div id="first" class="music play">
+                <div class="music_play_button">
+                    <img src="svg/play.svg"/>
+                </div>
+                <div class="music_title">
+                    Michael Jackson - Bilie Jean
+                </div>
+            </div>
+            <div id="second" class="music">
+                <div class="music_play_button">
+                    <img src="svg/play.svg"/>
+                </div>
+                <div class="music_title">
+                    Дурной Вкус - звук и темнота
+                </div>
+            </div>
+            <div id="third" class="music">
+                <div class="music_play_button">
+                    <img src="svg/play.svg"/>
+                </div>
+                <div class="music_title">
+                    Король и Шут – Дайте людям рому!
+                </div>
+            </div>
+
+            <div id="fourth" class="music">
+                <div class="music_play_button">
+                    <img src="svg/play.svg"/>
+                </div>
+                <div class="music_title">
+                    лампабикт - Крылья
+                </div>
+            </div>
+
+            <div id="fifth" class="music">
+                <div class="music_play_button">
+                    <img src="svg/play.svg"/>
+                </div>
+                <div class="music_title">
+                    Цой - Перемен!
+                </div>
+            </div>
+           
+        </div>
+
+    </div>
+    <script src="script.js"></script>
+</body>
+</html>
